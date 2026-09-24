@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .project-block {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .project-block:last-child { border-bottom: none; }
+    .project-status {
+      display: inline-block;
+      font-size: .65rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      letter-spacing: .03em;
+    }
+    .status-active {
+      background: rgba(61,122,111,.12);
+      color: var(--accent2);
+      border: 1px solid rgba(61,122,111,.2);
+    }
+    .status-complete {
+      background: var(--bg2);
+      color: var(--ink3);
+      border: 1px solid var(--rule);
+    }
+    .project-title {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+    .project-collab {
+      font-size: .75rem;
+      color: var(--ink3);
+      margin-bottom: 10px;
+    }
+    .project-desc p {
+      font-size: .86rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="mobile-nav">
+  <span class="mobile-nav-name">Your Name</span>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="dance.html">Dance</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="site-wrap">
+  <aside class="sidebar">
+    <div class="sidebar-name">
+      Your Name
+      <small>PhD Candidate<br>University Name</small>
+    </div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Home</a></li>
+      <li class="nav-section-label">Academic</li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li class="nav-section-label">Personal</li>
+      <li><a href="dance.html">Dance</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <a href="../files/cv.pdf" target="_blank">Download CV</a><br>
+      Last updated May 2026
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>Research</h1>
+      <p class="subtitle">
+        I work on [one-line summary of your research area]. Below are the
+        projects I am currently involved in, or have contributed to.
+      </p>
+    </div>
+
+    <!-- Broad research interests -->
+    <div class="section">
+      <h2>Interests</h2>
+      <p>
+        Write two or three sentences here about your general research area —
+        what questions you find important, what methods you use, and what
+        broader problem you are trying to address. This is the place to
+        explain your work to someone outside your immediate field.
+      </p>
+      <p>
+        You can also mention any interdisciplinary angles — collaborators
+        in other departments, industry links, or applied dimensions of the work.
+      </p>
+    </div>
+
+    <!-- Active projects -->
+    <div class="section">
+      <h2>Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="project-block">
+        <span class="project-status status-active">Active</span>
+        <div class="project-title">
+          [Title of your main PhD project]
+        </div>
+        <div class="project-collab">
+          With Prof. _____ · Funded by [grant name / body] · 2022 – present
+        </div>
+        <div class="project-desc">
+          <p>
+            Describe what this project is about in plain language. What is the
+            question? Why does it matter? What is the approach you are taking?
+          </p>
+          <p>
+            You can add a second paragraph going into more detail about your
+            specific contribution, methods you are developing, or early results.
+          </p>
+        </div>
+        <div class="entry-tags">
+          <span class="tag accent">[Topic]</span>
+          <span class="tag accent">[Method]</span>
+          <span class="tag">[Software / tool]</span>
+        </div>
+        <div class="link-row">
+          <a href="publications.html">Related publications</a>
+          <a href="https://github.com/yourhandle/repo" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-block">
+        <span class="project-status status-active">Active</span>
+        <div class="project-title">
+          [Title of a second project or collaboration]
+        </div>
+        <div class="project-collab">
+          With [Collaborator name], [Institution] · 2024 – present
+        </div>
+        <div class="project-desc">
+          <p>
+            Brief description of the project, your role, and what you hope
+            to find or build.
+          </p>
+        </div>
+        <div class="entry-tags">
+          <span class="tag accent">[Topic]</span>
+          <span class="tag">[Method]</span>
+        </div>
+      </div>
+
+      <!-- Project 3 - completed -->
+      <div class="project-block">
+        <span class="project-status status-complete">Completed</span>
+        <div class="project-title">
+          [MSc / undergraduate project title]
+        </div>
+        <div class="project-collab">
+          Supervised by Prof. _____ · [Institution] · 2020 – 2022
+        </div>
+        <div class="project-desc">
+          <p>
+            A short description of your earlier project. What did you do,
+            what did you find, and what came out of it?
+          </p>
+        </div>
+        <div class="link-row">
+          <a href="#">Thesis PDF</a>
+          <a href="publications.html">Related paper</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Software / tools -->
+    <div class="section">
+      <h2>Software and tools</h2>
+      <p>
+        If you have written code, built a dataset, or released a tool as
+        part of your research, list it here. This helps others find and cite
+        your work.
+      </p>
+
+      <div class="entry">
+        <div class="entry-year">2024</div>
+        <div class="entry-body">
+          <div class="entry-title">[Package / tool name]</div>
+          <div class="entry-sub">[Language] · [License]</div>
+          <div class="entry-desc">
+            One sentence on what it does and who it is for.
+          </div>
+          <div class="link-row">
+            <a href="https://github.com/yourhandle/repo" target="_blank">GitHub</a>
+            <a href="#">Documentation</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

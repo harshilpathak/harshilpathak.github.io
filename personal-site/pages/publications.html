@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .pub-entry {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .pub-entry:last-child { border-bottom: none; }
+    .pub-title {
+      font-size: .92rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .pub-authors {
+      font-size: .78rem;
+      color: var(--ink2);
+      margin-bottom: 3px;
+    }
+    .pub-authors strong { color: var(--ink); }
+    .pub-venue {
+      font-size: .78rem;
+      color: var(--ink3);
+      font-style: italic;
+      margin-bottom: 7px;
+    }
+    .pub-abstract {
+      font-size: .76rem;
+      color: var(--ink3);
+      max-width: 60ch;
+      line-height: 1.55;
+      margin-bottom: 8px;
+      display: none;
+    }
+    .pub-abstract.open { display: block; }
+    .toggle-abstract {
+      font-size: .72rem;
+      color: var(--accent);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      font-family: var(--sans);
+      font-weight: 500;
+      margin-right: 12px;
+    }
+    .toggle-abstract:hover { text-decoration: underline; }
+    .note-box {
+      background: rgba(61,122,111,.07);
+      border-left: 3px solid var(--accent);
+      padding: 10px 14px;
+      border-radius: 0 4px 4px 0;
+      font-size: .78rem;
+      color: var(--ink2);
+      margin-bottom: 28px;
+      max-width: 56ch;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="mobile-nav">
+  <span class="mobile-nav-name">Your Name</span>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="dance.html">Dance</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="site-wrap">
+  <aside class="sidebar">
+    <div class="sidebar-name">
+      Your Name
+      <small>PhD Candidate<br>University Name</small>
+    </div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Home</a></li>
+      <li class="nav-section-label">Academic</li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li class="nav-section-label">Personal</li>
+      <li><a href="dance.html">Dance</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <a href="../files/cv.pdf" target="_blank">Download CV</a><br>
+      Last updated May 2026
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>Publications</h1>
+      <p class="subtitle">
+        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+        &nbsp;·&nbsp;
+        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank">ORCID</a>
+        &nbsp;·&nbsp;
+        <a href="https://arxiv.org/search/?searchtype=author&query=YourName" target="_blank">arXiv</a>
+      </p>
+    </div>
+
+    <div class="note-box">
+      <strong>Your name</strong> is shown in bold in each author list.
+      Preprint versions are linked where available.
+    </div>
+
+    <!-- Journal articles -->
+    <h2>Journal articles</h2>
+    <div class="section">
+
+      <div class="pub-entry">
+        <div class="pub-title">
+          Title of your journal paper — write it exactly as published
+        </div>
+        <div class="pub-authors">
+          First Author, <strong>Your Name</strong>, and Senior Author
+        </div>
+        <div class="pub-venue">
+          Journal of [Field], vol. XX, no. X, pp. xxx–xxx, 2025.
+          doi: <a href="https://doi.org/10.xxxx/xxxxx" target="_blank">10.xxxx/xxxxx</a>
+        </div>
+        <div class="pub-abstract" id="abs1">
+          Paste your abstract here. This is hidden by default and shown when
+          the reader clicks "Abstract" below — a clean way to keep the page
+          tidy without hiding useful information.
+        </div>
+        <button class="toggle-abstract" onclick="toggleAbs('abs1', this)">Abstract</button>
+        <div class="link-row" style="display:inline-flex">
+          <a href="#">PDF</a>
+          <a href="#">arXiv</a>
+          <a href="#">Code</a>
+        </div>
+        <div class="entry-tags" style="margin-top:8px">
+          <span class="tag accent">[Topic]</span>
+          <span class="tag">[Method]</span>
+        </div>
+      </div>
+
+      <div class="pub-entry">
+        <div class="pub-title">
+          Title of a second paper
+        </div>
+        <div class="pub-authors">
+          <strong>Your Name</strong> and Co-author Name
+        </div>
+        <div class="pub-venue">
+          Journal of [Field], vol. XX, no. X, pp. xxx–xxx, 2024.
+          doi: <a href="#" target="_blank">10.xxxx/xxxxx</a>
+        </div>
+        <div class="pub-abstract" id="abs2">
+          Abstract text goes here.
+        </div>
+        <button class="toggle-abstract" onclick="toggleAbs('abs2', this)">Abstract</button>
+        <div class="link-row" style="display:inline-flex">
+          <a href="#">PDF</a>
+          <a href="#">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Conference papers -->
+    <h2>Conference papers</h2>
+    <div class="section">
+
+      <div class="pub-entry">
+        <div class="pub-title">
+          Title of your conference paper
+        </div>
+        <div class="pub-authors">
+          <strong>Your Name</strong>, First Co-author, and Second Co-author
+        </div>
+        <div class="pub-venue">
+          Proceedings of [Conference Name] ([ABBREV] 2025), [City], 2025,
+          pp. xxx–xxx.
+        </div>
+        <div class="pub-abstract" id="abs3">
+          Abstract text goes here.
+        </div>
+        <button class="toggle-abstract" onclick="toggleAbs('abs3', this)">Abstract</button>
+        <div class="link-row" style="display:inline-flex">
+          <a href="#">PDF</a>
+          <a href="#">Slides</a>
+          <a href="#">Poster</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Preprints / under review -->
+    <h2>Preprints and under review</h2>
+    <div class="section">
+
+      <div class="pub-entry">
+        <div class="pub-title">
+          Title of paper currently under review or as a preprint
+        </div>
+        <div class="pub-authors">
+          <strong>Your Name</strong> and Co-author Name
+        </div>
+        <div class="pub-venue">
+          Under review at [Journal name]. Preprint at arXiv:XXXX.XXXXX, 2026.
+        </div>
+        <div class="link-row">
+          <a href="#">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Theses -->
+    <h2>Theses</h2>
+    <div class="section">
+
+      <div class="pub-entry">
+        <div class="pub-title">
+          Title of your MSc dissertation
+        </div>
+        <div class="pub-authors"><strong>Your Name</strong></div>
+        <div class="pub-venue">
+          MSc thesis, University Name, 2022.
+          Supervised by Prof. _____.
+        </div>
+        <div class="link-row">
+          <a href="#">PDF</a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function toggleAbs(id, btn) {
+    const el = document.getElementById(id);
+    const isOpen = el.classList.toggle('open');
+    btn.textContent = isOpen ? 'Hide abstract' : 'Abstract';
+  }
+</script>
+</body>
+</html>

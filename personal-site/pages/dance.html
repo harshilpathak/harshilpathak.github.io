@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .perf-entry {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .perf-entry:last-child { border-bottom: none; }
+    .perf-title {
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+    .perf-detail {
+      font-size: .78rem;
+      color: var(--ink3);
+      margin-bottom: 4px;
+    }
+    .perf-note {
+      font-size: .76rem;
+      color: var(--ink2);
+      max-width: 56ch;
+    }
+    .quote-block {
+      border-left: 2px solid var(--accent);
+      padding: 4px 0 4px 20px;
+      margin: 28px 0;
+    }
+    .quote-block p {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--ink);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .quote-block cite {
+      font-size: .72rem;
+      color: var(--ink3);
+      font-style: normal;
+      display: block;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="mobile-nav">
+  <span class="mobile-nav-name">Your Name</span>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="dance.html">Dance</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="site-wrap">
+  <aside class="sidebar">
+    <div class="sidebar-name">
+      Your Name
+      <small>PhD Candidate<br>University Name</small>
+    </div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Home</a></li>
+      <li class="nav-section-label">Academic</li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li class="nav-section-label">Personal</li>
+      <li><a href="dance.html" class="active">Dance</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <a href="../files/cv.pdf" target="_blank">Download CV</a><br>
+      Last updated May 2026
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-header">
+      <h1>Dance</h1>
+      <p class="subtitle">
+        [Your dance style/s] — performing and training since [year]
+      </p>
+    </div>
+
+    <!-- Personal note -->
+    <div class="section">
+      <p>
+        Write something genuine here about your relationship with dance — when
+        you started, what style/s you practice, what it means to you. This page
+        is the most personal one on the site, so resist the urge to list things
+        and just talk.
+      </p>
+      <p>
+        You can mention how dance and research sit together in your life — or
+        don't. It is entirely up to you how much you connect them.
+      </p>
+    </div>
+
+    <!-- Optional pull quote -->
+    <div class="quote-block">
+      <p>
+        A sentence you find meaningful about dance, movement, or practice —
+        from a choreographer, a teacher, or yourself.
+      </p>
+      <cite>— Source, if applicable</cite>
+    </div>
+
+    <!-- Training -->
+    <div class="section">
+      <h2>Training and background</h2>
+      <div class="dance-grid">
+
+        <div class="dance-card">
+          <h3>[Style — e.g. Contemporary]</h3>
+          <p>
+            Where you trained, for how long, any notable teachers or
+            companies you worked with.
+          </p>
+        </div>
+
+        <div class="dance-card">
+          <h3>[Style — e.g. Bharatanatyam]</h3>
+          <p>
+            Training background, institution, guru, years of study.
+          </p>
+        </div>
+
+        <div class="dance-card">
+          <h3>[Style — e.g. Salsa / Ballroom]</h3>
+          <p>
+            Brief note on your involvement — social dancing, competitions,
+            teaching, etc.
+          </p>
+        </div>
+
+        <div class="dance-card">
+          <h3>[Workshops / intensives]</h3>
+          <p>
+            Notable workshops, residencies, or summer programmes you have
+            attended.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Performances -->
+    <div class="section">
+      <h2>Performances</h2>
+      <p>Selected performances and productions.</p>
+
+      <div class="perf-entry">
+        <div style="display:grid;grid-template-columns:90px 1fr;gap:0 24px">
+          <span style="font-size:.78rem;color:var(--ink3);font-weight:500;padding-top:2px">Apr 2026</span>
+          <div>
+            <div class="perf-title">[Production / Show title]</div>
+            <div class="perf-detail">
+              [Company / Group] &nbsp;·&nbsp; [Venue], [City]
+            </div>
+            <div class="perf-note">
+              Brief note on the piece, your role, or what it meant to you.
+            </div>
+            <div class="link-row">
+              <a href="#">Programme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="perf-entry">
+        <div style="display:grid;grid-template-columns:90px 1fr;gap:0 24px">
+          <span style="font-size:.78rem;color:var(--ink3);font-weight:500;padding-top:2px">Nov 2025</span>
+          <div>
+            <div class="perf-title">[Production / Show title]</div>
+            <div class="perf-detail">
+              [Company / Group] &nbsp;·&nbsp; [Venue], [City]
+            </div>
+            <div class="perf-note">
+              Brief note on the piece or production.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="perf-entry">
+        <div style="display:grid;grid-template-columns:90px 1fr;gap:0 24px">
+          <span style="font-size:.78rem;color:var(--ink3);font-weight:500;padding-top:2px">Mar 2024</span>
+          <div>
+            <div class="perf-title">[Production / Show title]</div>
+            <div class="perf-detail">
+              [Company / Group] &nbsp;·&nbsp; [Venue], [City]
+            </div>
+            <div class="perf-note">
+              Brief note. You can add as many entries as you like — just
+              copy and paste the block.
+            </div>
+            <div class="link-row">
+              <a href="#">Video</a>
+              <a href="#">Photos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Teaching / outreach -->
+    <div class="section">
+      <h2>Teaching and outreach</h2>
+      <p>
+        If you teach dance, choreograph, or are involved in community
+        projects, list them here. Otherwise delete this section.
+      </p>
+
+      <div class="entry">
+        <div class="entry-year">2024 –<br>present</div>
+        <div class="entry-body">
+          <div class="entry-title">[Class / Workshop you teach]</div>
+          <div class="entry-sub">[Studio / Community centre], [City]</div>
+          <div class="entry-desc">
+            Brief note on who you teach, what level, what style.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Video / media - optional -->
+    <div class="section">
+      <h2>Video</h2>
+      <p>
+        You can embed a YouTube or Vimeo link here using an iframe,
+        or link to a reel. Replace the src below with your own video URL.
+      </p>
+      <!-- Uncomment and edit when you have a video:
+      <div style="position:relative;padding-top:56.25%;margin-top:20px">
+        <iframe
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid var(--rule);border-radius:4px"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="Dance video"
+          allowfullscreen>
+        </iframe>
+      </div>
+      -->
+    </div>
+
+  </main>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+</script>
+</body>
+</html>
