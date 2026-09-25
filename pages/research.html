@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .project {
+      padding: 32px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .project:last-child { border-bottom: none; }
+    .project-status {
+      display: inline-block;
+      font-size: .65rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-bottom: 12px;
+      letter-spacing: .03em;
+    }
+    .status-active {
+      background: var(--indigo-bg);
+      color: var(--indigo);
+      border: 1px solid rgba(55,48,163,.2);
+    }
+    .status-done {
+      background: #f3f3f3;
+      color: var(--ink3);
+      border: 1px solid var(--rule2);
+    }
+    .project-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--black);
+      font-variation-settings: 'opsz' 36;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .project-meta {
+      font-size: .74rem;
+      color: var(--ink3);
+      margin-bottom: 14px;
+    }
+    .project-desc p {
+      font-size: .86rem;
+      color: var(--ink2);
+      max-width: 62ch;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="nav-home" href="../index.html">Your Name</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="research.html" class="active">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="dance.html">Dance</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="../index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="dance.html">Dance</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page">
+
+  <div class="section-head">
+    <h1>Research</h1>
+    <p>
+      Write one or two sentences here that describe your research area in
+      plain language — what you study and why it matters.
+    </p>
+  </div>
+
+  <!-- INTERESTS -->
+  <div class="two-col" style="padding-top:40px">
+    <div class="col-label">Interests</div>
+    <div class="home-block-body">
+      <p>
+        A short paragraph on what draws you to this research area. What
+        question sits at the centre of your work? What methods do you reach
+        for? What would it mean if you got the answer?
+      </p>
+      <p>
+        You can mention any interdisciplinary angles — collaborators in
+        other fields, applied dimensions, or unexpected connections.
+      </p>
+    </div>
+  </div>
+
+  <hr class="divider" style="margin-top:40px">
+
+  <!-- PROJECTS -->
+  <div class="two-col" style="padding-top:40px">
+    <div class="col-label">Projects</div>
+    <div>
+
+      <div class="project" style="padding-top:0">
+        <span class="project-status status-active">Active</span>
+        <div class="project-title">[Title of your main PhD project]</div>
+        <div class="project-meta">
+          With Prof. _____ · Funded by [grant] · 2022 – present
+        </div>
+        <div class="project-desc">
+          <p>
+            Describe what this project is about in plain language. What is
+            the question? Why does it matter? What approach are you taking?
+          </p>
+          <p>
+            A second paragraph with more detail on your specific
+            contribution, methods being developed, or early results.
+          </p>
+        </div>
+        <div class="tag-row">
+          <span class="tag ind">[Topic]</span>
+          <span class="tag ind">[Method]</span>
+          <span class="tag">[Tool / software]</span>
+        </div>
+        <div class="links">
+          <a href="publications.html">Related papers</a>
+          <a href="https://github.com/yourhandle/repo" target="_blank">Code</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <span class="project-status status-active">Active</span>
+        <div class="project-title">[Second project or collaboration]</div>
+        <div class="project-meta">
+          With [Collaborator], [Institution] · 2024 – present
+        </div>
+        <div class="project-desc">
+          <p>
+            Brief description of the project, your role, and what you
+            hope to find or build.
+          </p>
+        </div>
+        <div class="tag-row">
+          <span class="tag ind">[Topic]</span>
+          <span class="tag">[Method]</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <span class="project-status status-done">Completed</span>
+        <div class="project-title">[Earlier project — MSc or undergrad]</div>
+        <div class="project-meta">
+          Supervised by Prof. _____ · [Institution] · 2020 – 2022
+        </div>
+        <div class="project-desc">
+          <p>
+            Short description. What did you do, what did you find,
+            what came out of it?
+          </p>
+        </div>
+        <div class="links">
+          <a href="#">Thesis PDF</a>
+          <a href="publications.html">Related paper</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="divider" style="margin-top:40px">
+
+  <!-- SOFTWARE -->
+  <div class="two-col" style="padding-top:40px;padding-bottom:64px">
+    <div class="col-label">Software</div>
+    <div class="entry-group">
+
+      <div class="entry" style="padding-top:0">
+        <div class="entry-row">
+          <div class="entry-title">[Package or tool name]</div>
+          <div class="entry-year">2024</div>
+        </div>
+        <div class="entry-sub">[Language] · [Licence]</div>
+        <div class="entry-desc">
+          One sentence on what it does and who it is for.
+        </div>
+        <div class="links">
+          <a href="https://github.com/yourhandle/repo" target="_blank">GitHub</a>
+          <a href="#">Documentation</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span>Your Name · [University]</span>
+    <span>
+      <a href="../files/cv.pdf" target="_blank">CV</a> ·
+      <a href="../index.html">Home</a> ·
+      Last updated May 2026
+    </span>
+  </footer>
+
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mob').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

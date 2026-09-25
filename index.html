@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="nav-home" href="index.html">Your Name</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="pages/education.html">Education</a></li>
+    <li><a href="pages/research.html">Research</a></li>
+    <li><a href="pages/publications.html">Publications</a></li>
+    <li><a href="pages/dance.html">Dance</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="index.html">Home</a>
+  <a href="pages/education.html">Education</a>
+  <a href="pages/research.html">Research</a>
+  <a href="pages/publications.html">Publications</a>
+  <a href="pages/dance.html">Dance</a>
+  <a href="pages/contact.html">Contact</a>
+</div>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-name">Your<br>Name</div>
+    <div class="hero-grid">
+      <div>
+        <p class="hero-role">
+          <strong>PhD Candidate, [Your Field]</strong><br>
+          Department of _____, University Name<br>
+          Supervised by Prof. _____<br><br>
+          I work on [one sentence describing your research — what you
+          study, what question drives it, and why it matters].
+          Outside the lab I dance [style/s].
+        </p>
+      </div>
+      <div class="hero-links">
+        <a class="hero-link" href="mailto:your@email.com">
+          your@email.com
+          <span class="hero-link-label">Email</span>
+        </a>
+        <a class="hero-link" href="https://scholar.google.com" target="_blank">
+          Google Scholar
+          <span class="hero-link-label">Publications</span>
+        </a>
+        <a class="hero-link" href="https://github.com/yourhandle" target="_blank">
+          github.com/yourhandle
+          <span class="hero-link-label">Code</span>
+        </a>
+        <a class="hero-link" href="https://orcid.org/0000-0000-0000-0000" target="_blank">
+          0000-0000-0000-0000
+          <span class="hero-link-label">ORCID</span>
+        </a>
+        <a class="hero-link" href="files/cv.pdf" target="_blank">
+          Download CV
+          <span class="hero-link-label">PDF</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <div class="home-block">
+    <div class="home-block-label">Recent</div>
+    <div class="home-block-body">
+      <div class="news-strip">
+        <div class="news-row">
+          <span class="news-date">May 2026</span>
+          <span class="news-text">Paper accepted at [Conference / Journal] —
+            <a href="pages/publications.html">[Short title]</a>
+          </span>
+        </div>
+        <div class="news-row">
+          <span class="news-date">Mar 2026</span>
+          <span class="news-text">Presented at [Workshop], [City].
+            <a href="#">Slides available here.</a>
+          </span>
+        </div>
+        <div class="news-row">
+          <span class="news-date">Jan 2026</span>
+          <span class="news-text">
+            Started a new collaboration with [name / lab] on [topic].
+          </span>
+        </div>
+        <div class="news-row">
+          <span class="news-date">Nov 2025</span>
+          <span class="news-text">
+            Performed with [dance company] at [venue], [City].
+          </span>
+        </div>
+        <div class="news-row">
+          <span class="news-date">Sep 2025</span>
+          <span class="news-text">
+            Awarded [grant / fellowship name] for [purpose].
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESEARCH SNAPSHOT -->
+  <div class="home-block">
+    <div class="home-block-label">Research</div>
+    <div class="home-block-body">
+      <p>
+        Write two or three sentences here about what you actually work on —
+        the question, the approach, and what you hope it will eventually mean.
+        This is not a list. It is a paragraph that reads like something a
+        person wrote.
+      </p>
+      <p>
+        You can mention a second thread of work or a collaboration that is
+        running alongside your main project.
+      </p>
+      <p><a href="pages/research.html">See all projects</a></p>
+    </div>
+  </div>
+
+  <!-- SELECTED PUBS -->
+  <div class="home-block">
+    <div class="home-block-label">Selected work</div>
+    <div class="home-block-body">
+
+      <div class="pub" style="padding-top:0">
+        <div class="pub-title">Title of your most recent or most important paper</div>
+        <div class="pub-authors"><b>Your Name</b>, Co-author, Senior Author</div>
+        <div class="pub-venue">Journal / Conference, 2025</div>
+        <div class="links" style="margin-top:8px">
+          <a href="#">PDF</a><a href="#">arXiv</a><a href="#">Code</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Title of a second paper worth highlighting</div>
+        <div class="pub-authors">Co-author, <b>Your Name</b>, Senior Author</div>
+        <div class="pub-venue">Journal / Conference, 2024</div>
+        <div class="links" style="margin-top:8px">
+          <a href="#">PDF</a><a href="#">arXiv</a>
+        </div>
+      </div>
+
+      <p style="font-size:.8rem;color:var(--ink3);margin-top:18px">
+        <a href="pages/publications.html">Full list of publications</a>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- ABOUT / OUTSIDE THE LAB -->
+  <div class="home-block" style="border-bottom:none">
+    <div class="home-block-label">Outside the lab</div>
+    <div class="home-block-body">
+      <p>
+        A short paragraph about who you are outside of work. What do you
+        dance, and what does it mean to you? Any other interests worth
+        mentioning? This is not a list of hobbies. It is one paragraph that
+        sounds like you.
+      </p>
+      <p><a href="pages/dance.html">Dance</a></p>
+    </div>
+  </div>
+
+</div>
+
+<div class="page">
+  <footer>
+    <span>Your Name · [University] · [City]</span>
+    <span>
+      <a href="files/cv.pdf" target="_blank">CV</a> ·
+      <a href="https://scholar.google.com" target="_blank">Scholar</a> ·
+      <a href="https://github.com/yourhandle" target="_blank">GitHub</a> ·
+      Last updated May 2026
+    </span>
+  </footer>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mob').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

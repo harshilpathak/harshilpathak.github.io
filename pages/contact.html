@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="nav-home" href="../index.html">Your Name</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="dance.html">Dance</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="../index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="dance.html">Dance</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page">
+
+  <div class="section-head">
+    <h1>Contact</h1>
+    <p>
+      Happy to hear from collaborators, students, journalists, or anyone
+      with questions about my work.
+    </p>
+  </div>
+
+  <div class="contact-split">
+
+    <!-- LEFT: contact details -->
+    <div>
+      <h2>Get in touch</h2>
+
+      <div class="contact-item">
+        <span class="c-label">Email</span>
+        <span class="c-val">
+          <a href="mailto:your@email.com">your@email.com</a><br>
+          <span style="font-size:.7rem;color:var(--ink3)">
+            Best way to reach me. I reply within a week.
+          </span>
+        </span>
+      </div>
+
+      <div class="contact-item">
+        <span class="c-label">Office</span>
+        <span class="c-val">
+          Room [number], [Building]<br>
+          [Department]<br>
+          [University]<br>
+          [City, Postcode, Country]
+        </span>
+      </div>
+
+      <div class="contact-item">
+        <span class="c-label">Scholar</span>
+        <span class="c-val">
+          <a href="https://scholar.google.com" target="_blank">Google Scholar profile</a>
+        </span>
+      </div>
+
+      <div class="contact-item">
+        <span class="c-label">ORCID</span>
+        <span class="c-val">
+          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank">0000-0000-0000-0000</a>
+        </span>
+      </div>
+
+      <div class="contact-item">
+        <span class="c-label">GitHub</span>
+        <span class="c-val">
+          <a href="https://github.com/yourhandle" target="_blank">github.com/yourhandle</a>
+        </span>
+      </div>
+
+      <div class="contact-item">
+        <span class="c-label">LinkedIn</span>
+        <span class="c-val">
+          <a href="https://linkedin.com/in/yourhandle" target="_blank">linkedin.com/in/yourhandle</a>
+        </span>
+      </div>
+
+      <div class="contact-item">
+        <span class="c-label">Twitter/X</span>
+        <span class="c-val">
+          <a href="https://twitter.com/yourhandle" target="_blank">@yourhandle</a>
+        </span>
+      </div>
+
+      <div class="contact-item">
+        <span class="c-label">CV</span>
+        <span class="c-val">
+          <a href="../files/cv.pdf" target="_blank">Download PDF</a>
+        </span>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: for specific audiences -->
+    <div>
+      <h2>Specific enquiries</h2>
+
+      <div class="entry" style="padding-top:0">
+        <div class="entry-title" style="font-size:.88rem">Collaborators</div>
+        <div class="entry-desc" style="margin-top:6px;font-size:.82rem;color:var(--ink2)">
+          I am always open to discussing collaboration, especially across
+          disciplines. Email me with a brief description of what you have
+          in mind.
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-title" style="font-size:.88rem">Media</div>
+        <div class="entry-desc" style="margin-top:6px;font-size:.82rem;color:var(--ink2)">
+          If you are a journalist or science communicator, please email me
+          directly. My university press office is also reachable at
+          [press@university.edu].
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-title" style="font-size:.88rem">Prospective students</div>
+        <div class="entry-desc" style="margin-top:6px;font-size:.82rem;color:var(--ink2)">
+          I do not currently have capacity to supervise additional students,
+          but I am glad to point you toward opportunities in the group or
+          department. PhD applications go through
+          <a href="#">[department graduate admissions link]</a>.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <span>Your Name · [University]</span>
+    <span>
+      <a href="../files/cv.pdf" target="_blank">CV</a> ·
+      <a href="../index.html">Home</a> ·
+      Last updated May 2026
+    </span>
+  </footer>
+
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mob').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

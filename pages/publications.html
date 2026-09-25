@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="nav-home" href="../index.html">Your Name</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html" class="active">Publications</a></li>
+    <li><a href="dance.html">Dance</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mob">
+  <a href="../index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="dance.html">Dance</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page">
+
+  <div class="section-head">
+    <h1>Publications</h1>
+    <p>
+      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      &nbsp;·&nbsp;
+      <a href="https://orcid.org/0000-0000-0000-0000" target="_blank">ORCID</a>
+      &nbsp;·&nbsp;
+      <a href="https://arxiv.org" target="_blank">arXiv</a>
+      &nbsp;·&nbsp; Your name in bold throughout.
+    </p>
+  </div>
+
+  <!-- JOURNAL ARTICLES -->
+  <div class="two-col" style="padding-top:40px">
+    <div class="col-label">Journal articles</div>
+    <div>
+
+      <div class="pub" style="padding-top:0">
+        <div class="pub-title">
+          Title of your journal paper, written exactly as published
+        </div>
+        <div class="pub-authors">
+          First Author, <b>Your Name</b>, Senior Author
+        </div>
+        <div class="pub-venue">
+          Journal of [Field], vol. XX, pp. xxx–xxx, 2025.
+          doi: <a href="https://doi.org/10.xxxx/xxxxx" target="_blank">10.xxxx/xxxxx</a>
+        </div>
+        <div class="pub-abs" id="a1">
+          Paste your abstract here. Short, accurate, your own words.
+          Click "Abstract" below to expand — this keeps the page readable
+          without hiding useful detail.
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;margin-top:8px;flex-wrap:wrap">
+          <button class="abs-btn" onclick="toggleAbs('a1',this)">Abstract</button>
+          <div class="links" style="margin-top:0">
+            <a href="#">PDF</a>
+            <a href="#">arXiv</a>
+            <a href="#">Code</a>
+          </div>
+        </div>
+        <div class="tag-row">
+          <span class="tag ind">[Topic]</span>
+          <span class="tag">[Method]</span>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Title of a second journal paper</div>
+        <div class="pub-authors"><b>Your Name</b>, Co-author Name</div>
+        <div class="pub-venue">
+          Journal of [Field], vol. XX, pp. xxx–xxx, 2024.
+          doi: <a href="#" target="_blank">10.xxxx/xxxxx</a>
+        </div>
+        <div class="pub-abs" id="a2">Abstract text here.</div>
+        <div style="display:flex;align-items:center;gap:16px;margin-top:8px;flex-wrap:wrap">
+          <button class="abs-btn" onclick="toggleAbs('a2',this)">Abstract</button>
+          <div class="links" style="margin-top:0">
+            <a href="#">PDF</a>
+            <a href="#">arXiv</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="divider" style="margin-top:40px">
+
+  <!-- CONFERENCE PAPERS -->
+  <div class="two-col" style="padding-top:40px">
+    <div class="col-label">Conference papers</div>
+    <div>
+
+      <div class="pub" style="padding-top:0">
+        <div class="pub-title">Title of your conference paper</div>
+        <div class="pub-authors">
+          <b>Your Name</b>, First Co-author, Second Co-author
+        </div>
+        <div class="pub-venue">
+          Proceedings of [Conference Name] ([ABBREV] 2025), [City], pp. xxx–xxx, 2025.
+        </div>
+        <div class="pub-abs" id="a3">Abstract text here.</div>
+        <div style="display:flex;align-items:center;gap:16px;margin-top:8px;flex-wrap:wrap">
+          <button class="abs-btn" onclick="toggleAbs('a3',this)">Abstract</button>
+          <div class="links" style="margin-top:0">
+            <a href="#">PDF</a>
+            <a href="#">Slides</a>
+            <a href="#">Poster</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Title of a second conference paper</div>
+        <div class="pub-authors">Co-author, <b>Your Name</b>, Senior Author</div>
+        <div class="pub-venue">
+          [Conference Name] ([ABBREV] 2024), [City], pp. xxx–xxx, 2024.
+        </div>
+        <div class="pub-abs" id="a4">Abstract text here.</div>
+        <div style="display:flex;align-items:center;gap:16px;margin-top:8px;flex-wrap:wrap">
+          <button class="abs-btn" onclick="toggleAbs('a4',this)">Abstract</button>
+          <div class="links" style="margin-top:0">
+            <a href="#">PDF</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="divider" style="margin-top:40px">
+
+  <!-- PREPRINTS -->
+  <div class="two-col" style="padding-top:40px">
+    <div class="col-label">Preprints &amp; under review</div>
+    <div>
+
+      <div class="pub" style="padding-top:0">
+        <div class="pub-title">Title of paper currently under review or as a preprint</div>
+        <div class="pub-authors"><b>Your Name</b>, Co-author Name</div>
+        <div class="pub-venue">
+          Under review at [Journal]. Preprint: arXiv:XXXX.XXXXX, 2026.
+        </div>
+        <div class="links" style="margin-top:8px">
+          <a href="#">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="divider" style="margin-top:40px">
+
+  <!-- THESES -->
+  <div class="two-col" style="padding-top:40px;padding-bottom:64px">
+    <div class="col-label">Theses</div>
+    <div>
+
+      <div class="pub" style="padding-top:0">
+        <div class="pub-title">Title of your MSc thesis</div>
+        <div class="pub-authors"><b>Your Name</b></div>
+        <div class="pub-venue">
+          MSc thesis, University Name, 2022. Supervised by Prof. _____.
+        </div>
+        <div class="links" style="margin-top:8px">
+          <a href="#">PDF</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span>Your Name · [University]</span>
+    <span>
+      <a href="../files/cv.pdf" target="_blank">CV</a> ·
+      <a href="../index.html">Home</a> ·
+      Last updated May 2026
+    </span>
+  </footer>
+
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mob').classList.toggle('open');
+  }
+  function toggleAbs(id, btn) {
+    const el = document.getElementById(id);
+    el.classList.toggle('open');
+    btn.textContent = el.classList.contains('open') ? 'Hide abstract' : 'Abstract';
+  }
+</script>
+</body>
+</html>
